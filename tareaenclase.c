@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "sumar.h"
 #include "restar.h"
+#include "multiplicar.h"
+#include "division.h"
 
 int main(int argc, char const *argv[]){
     int a, b;
@@ -8,8 +10,11 @@ int main(int argc, char const *argv[]){
     scanf("%d", &a);
     printf("Ingrese 2do numero: ");
     scanf("%d", &b);
-    printf("%d\n", sumar(a,b));
-    printf("%d ", restar(a,b));
+    printf("Resultado de la suma es: %d\n", sumar(a,b));
+    printf("Resultado de la resta es: %d ", restar(a,b));
+    printf("Resultado de la multiplicacion es: %d ", multiplicar(a,b));
+    printf("Resultado de la division es: %d ", division(a,b));
     return 0;
 }
-//3er commit gcc -o runprograma .\tareaenclase.c .\sumar.c, se agrego el .exe//
+//4to commit gcc -o runprograma .\tareaenclase.c .\sumar.c .\restar.c .\multiplicar.c .\division.c   >>   se agrego el .exe//
+//se agrego la funcion multiplicacion y division//

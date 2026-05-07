@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "sumar.h"
+
 int main(int argc, char const *argv[]){
     int a, b;
     printf("ingrese 1er numero:");
@@ -8,7 +10,4 @@ int main(int argc, char const *argv[]){
     printf("%d ", sumar(a,b));
     return 0;
 }
-//1er commit//
-int sumar(int a, int b){
-    return a + b;
-}
+//2do commit//
